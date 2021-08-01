@@ -1,0 +1,26 @@
+{
+  "name": "ethblockexplorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel <your entry file>",
+    "build": "parcel build <your entry file>"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "elliptic": "^6.5.4",
+    "ethers": "^5.4.3",
+    "jquery": "^3.6.0",
+    "jquery-ajax": "^2.1.4",
+    "popper.js": "^1.16.1"
+  }
+}
