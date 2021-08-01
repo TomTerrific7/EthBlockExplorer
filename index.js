@@ -31,7 +31,8 @@ async function latestBlock(number = "latest") {
    var number = block.number;
    var hash = block.hash;
    var time = block.timestamp;
-   $('tbody').append("<tr><td>" + number + "</td><td>" + hash + "</td><td>" + time + "</td></tr>");
+   var nonce = block.nonce;
+   $('tbody').append("<tr><td>" + number + "</td><td>" + hash + "</td><td>" + time + "</td><td>" + nonce + "</td></tr>");
  }
 
 

@@ -30732,7 +30732,7 @@ var url = 'https://mainnet.infura.io/v3/9629a144755d44f2b1f5b38495aed378';
 var provider = new _ethers.ethers.providers.JsonRpcProvider(url); //const bootstrap = require('bootstrap')
 
 (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee3() {
-  var accountBalance, _accountBalance, latestBlock, _latestBlock, recentBlock, i, block, number, hash, time;
+  var accountBalance, _accountBalance, latestBlock, _latestBlock, recentBlock, i, block, number, hash, time, nonce;
 
   return _regenerator.default.wrap(function _callee3$(_context3) {
     while (1) {
@@ -30822,7 +30822,7 @@ var provider = new _ethers.ethers.providers.JsonRpcProvider(url); //const bootst
 
         case 10:
           if (!(i < 10)) {
-            _context3.next = 21;
+            _context3.next = 22;
             break;
           }
 
@@ -30834,14 +30834,15 @@ var provider = new _ethers.ethers.providers.JsonRpcProvider(url); //const bootst
           number = block.number;
           hash = block.hash;
           time = block.timestamp;
-          $('tbody').append("<tr><td>" + number + "</td><td>" + hash + "</td><td>" + time + "</td></tr>");
+          nonce = block.nonce;
+          $('tbody').append("<tr><td>" + number + "</td><td>" + hash + "</td><td>" + time + "</td><td>" + nonce + "</td></tr>");
 
-        case 18:
+        case 19:
           i++;
           _context3.next = 10;
           break;
 
-        case 21:
+        case 22:
         case "end":
           return _context3.stop();
       }
@@ -30876,7 +30877,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61798" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61981" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
